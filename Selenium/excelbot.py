@@ -5,9 +5,10 @@ from selenium.webdriver.support.ui import WebDriverWait
 from selenium.webdriver.support import expected_conditions as EC
 from selenium.webdriver.common.keys import Keys
 from selenium.webdriver.support.select import Select
+from webdriver_manager.chrome import ChromeDriverManager
 import os, sys
 
-browser = webdriver.Chrome()
+browser = webdriver.Chrome(ChromeDriverManager(). install())
 browser.get('https://online2pdf.com/pdf2excel')
 cont=0
 #Site de coleta
