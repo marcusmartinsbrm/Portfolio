@@ -2,7 +2,7 @@
 
 Projetos feitos na faculdade de Big Data no Agronegocio.
 
-Projetos feitos somente por mim e projetos feitos por equipes das quais estava participando.
+Projetos feitos somente por mim e feitos por equipes das quais estava participando.
 
 ## Instalações a serem feitas:
 <p>  -Seleium (https://selenium-python.readthedocs.io/installation.html para mais informações de suas instalações corretas consultar o site)
