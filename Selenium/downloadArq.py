@@ -5,12 +5,13 @@ from selenium.webdriver.common.by import By
 from selenium.webdriver.support.ui import WebDriverWait
 from selenium.webdriver.support import expected_conditions as EC
 from selenium.webdriver.common.keys import Keys
+from webdriver_manager.chrome import ChromeDriverManager
 
 links = ['Fill','Lista_A', 'Lista_A_Excluidos', 'Nada', 'Lista_B', 'Lista_B_Excluidos']
 
 
 
-browser = webdriver.Chrome('./Driver/chromedriver')
+browser = webdriver.Chrome(ChromeDriverManager (). install())
 url = 'http://portal.anvisa.gov.br/registros-e-autorizacoes/medicamentos/produtos/medicamentos-de-referencia/lista'
 
 pag=1
