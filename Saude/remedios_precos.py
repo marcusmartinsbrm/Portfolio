@@ -1,6 +1,7 @@
 # encoding: utf-8
 from selenium.webdriver.common.keys import Keys
 from selenium import webdriver
+from webdriver_manager.chrome import ChromeDriverManager
 import time
 import csv
 from pymongo import MongoClient
@@ -13,7 +14,7 @@ novo = open('RemediosM.csv','a+')
 display = Display(visible=0, size=(800,800))
 display.start()
 
-chrome_options = webdriver.ChromeOptions()
+chrome_options = webdriver.Chrome(ChromeDriverManager(). install())
 chrome_options.add_argument('--no-sandbox')
 chrome = webdriver.Chrome('/root/chromedriver', chrome_options=chrome_options)
 
