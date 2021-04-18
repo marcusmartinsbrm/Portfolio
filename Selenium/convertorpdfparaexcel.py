@@ -4,8 +4,9 @@ from selenium.webdriver.common.by import By
 from selenium.webdriver.support.ui import WebDriverWait
 from selenium.webdriver.support import expected_conditions as EC
 from selenium.webdriver.common.keys import Keys
+from webdriver_manager.chrome import ChromeDriverManager
 import os, sys
-browser = webdriver.Chrome('./Driver/chromedriver')
+browser = webdriver.Chrome(ChromeDriverManager (). install())
 
 browser.get('https://online2pdf.com/pdf2excel')
 
